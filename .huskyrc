@@ -1,0 +1,8 @@
+{
+  "hooks": {
+    "post-checkout": "yarn",
+    "pre-commit": "eslint",
+    "post-commit": "git status",
+    "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+  }
+}

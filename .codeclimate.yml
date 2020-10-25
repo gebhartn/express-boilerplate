@@ -1,0 +1,26 @@
+version: "2"
+
+plugins:
+  eslint:
+    enabled: true
+    channel: "eslint-7"
+    config:
+      config: .eslintrc
+
+checks:
+  method-complexity:
+    enabled: false
+  method-lines:
+    config:
+      threshold: 150
+  similar-code:
+    enabled: false
+  identical-code:
+    enabled: false
+
+ratings:
+   paths:
+    - "**.js"
+
+exclude_paths:
+- dist/**/*
